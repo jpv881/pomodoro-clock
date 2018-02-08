@@ -1,0 +1,113 @@
+body{
+    background-color: #281df2;
+}
+#pomodoro{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:150px;
+    width: 300px;
+}
+
+.widget{
+    position:relative;
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+#widgets{
+    margin-top:50px;
+}
+
+#timer{
+    border: solid 2px #42ed36;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+#innerTimer{
+    height: 300px;
+    width: 300px;
+    background-color: #42ed36;
+    position: relative;
+    top: -300px;
+    left: -300px;
+}
+
+#breakInnerTimer{
+    height: 300px;
+    width: 300px;
+    background-color: #f92100;
+    position: relative;
+    top: -600px;
+    left: 300px;
+}
+
+.widget p{
+    font-size: 20px;
+    color: white;
+}
+
+#session, #break {
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.fa.fa-free-code-camp{
+    font-size: 22px;
+    margin-top: 13px;
+}
+
+span.fa.fa-plus{
+    margin-right: 10px;
+}
+
+span.fa.fa-minus{
+    margin-left: 10px;
+}
+
+p:first-child{
+    margin: 0;
+}
+
+.fa:hover{
+    cursor: pointer;
+}
+
+#textSession, #time{
+    color:white;
+    z-index: 20;
+}
+
+#time{
+    font-size: 55px;
+}
+
+#textSession{
+    font-size: 40px;
+}
+
+#timer > div:nth-child(1),
+#timer > div:nth-child(2){
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer:before{
+        content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    z-index: 2;
+    border: 7px solid #281df2;
+}

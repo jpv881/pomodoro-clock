@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Pomodoro Clock</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="pomodoro">
+            <div>
+                <div id="timer">
+                    <div>
+                        <span id="textSession">Session</span>
+                    </div>
+                    <div>
+                        <span id="time">25:00</span>
+                    </div>
+                    <div id="innerTimer">
+                    </div>
+                    <div id="breakInnerTimer">
+                    </div>
+                </div>
+            </div>
+            <div id="widgets">
+                <div class="widget">
+                    <p>BREAK</p>
+                    <p><span id="moreBreak" class="fa fa-plus"></span><span id="break">5</span><span id="lessBreak" class="fa fa-minus"></span></p>
+                </div>
+                <div class="widget">
+                    <p>RESET</p>
+                    <p><span class="fa fa-free-code-camp "></span></p>
+                </div>
+                <div class="widget">
+                    <p>SESSION</p>
+                    <p><span id="moreSession" class="fa fa-plus"></span><span id="session">25</span><span id="lessSession" class="fa fa-minus"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="pomodoro.js"></script>
+</body>
+
+</html>
